@@ -1,0 +1,167 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.navlist{
+    display:flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+
+}
+.navlist li{
+ list-style: none;
+}
+ .navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+ 
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+ .left-container{
+     background-color: #252625;
+     width:72%;
+     padding-left: 3rem;
+
+
+ }
+  .right-container{
+    background:linear-gradient(#252625,#ff3877 70%);
+    width:28%;
+
+  }
+  .icons .fa-brands{
+  color:#bbb;
+  font-size: 1.7rem;
+
+
+  
+  }
+   .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+   }
+   .content{
+    margin-left: 4rem;
+
+   }
+   .content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+
+   }
+   .content .intro span{
+    color: #ff3877;
+   }
+   .content h1{
+    font-size: 5rem;
+    color: #ff3877;
+   }
+   .content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 35rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.5rem;
+   }
+   .btn-container button{
+    border: .1rem solid #ff3872;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 1s;
+    
+   }
+   .btn-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50%;
+    
+   }
+   .left-container .btn-container{
+    padding-right: 100%;
+   }
+    button:nth-child(1){
+        background-color: #ff3872;
+        color: #252625;
+    }
+    button:nth-child(2){
+        background: transparent;
+        color: #ff3867;
+        margin-left: 2rem;
+    }
+    button:nth-child(1):hover{
+        background: transparent;
+        color: #ff3877;
+    }
+    button:nth-child(2):hover{
+        background: #ff3877;
+        color: #252625;
+    }
+    .icons .fa-brands{
+        cursor: pointer;
+        background: linear-gradient(#fff ,#ff3877);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .design .circle{
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%; 
+        left: 70%;
+        transform: translate(-50%, -50%);
+
+    }
+    .circle:nth-child(1){
+        background: linear-gradient(90deg,transparent 47.8%,#252625 42.2%);
+        width: 20em;
+        
+
+    }
+    .circle:nth-child(2){
+        background-image: url("IMG_20240427_112519.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 15rem;
+        box-shadow: 0 0 1rem #fff,
+         inset 0 0 1rem #fff ,
+         0 0 2rem #ff3877,
+      inset   0 0 2rem #ff3877
+         ;
+    }
+     .navlist li a::after{
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: .1rem;
+        left: 0;
+        bottom:-5px
+
+     }
